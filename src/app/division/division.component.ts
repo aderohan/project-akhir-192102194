@@ -24,7 +24,7 @@ export class DivisionComponent implements OnInit {
       .subscribe(
         response => {
           console.log(response);
-            window.location.reload();
+          this.router.navigate(['/dashboard']);
         },
         error => {
           console.log(error);
